@@ -1,0 +1,8 @@
+@media screen and (max-width: 678px){
+    #banner .slider .slid .details {
+        padding-right: 0;
+    }
+    #banner .slider .slid .details .title{
+        font-size: 30px;
+    }
+}

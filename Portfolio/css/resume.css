@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap');
+*{
+  box-sizing: border-box;
+}
+.body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  @keyframes bubblesGlow{
+    0% {box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );}
+    50% {box-shadow: 0 18px 42px 0 rgba( 31, 38, 135, 0.37 );}
+    100% {box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );}
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+  .resume-box {
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135,.37); /* Glass shadow */
+  padding: 20px;
+  width: 70%;
+  padding: 0;
+  border-radius: 3px;
+}
+.intro{
+  height: auto;
+  display: flex;
+  grid-template-rows: 60%, 35%;
+  gap: 10px;
+  background-color: #000;
+  color: white;
+  padding: 25px;
+}
+.intro div:nth-child(1) h1{
+  color:white;
+  font-size: 3rem;
+}
+.intro div:nth-child(1) h3{
+  font-size: 1.5rem;
+  color: orangered;
+  margin: 0;
+}
+.intro div:nth-child(1) p{
+  font-size: 1.1rem;
+  line-height: 20px;
+}
+.intro div:nth-child(2) a img{
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+.links{
+  color: white;
+  background-color: rgb(34, 32, 32);
+  padding: 5px;
+  height: auto;
+}
+.links ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+} 
+.exp{
+  height: auto;
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+}
+.exp div:nth-child(1), .exp div:nth-child(2){
+  width: 50%;
+}
+.exp div h1{
+  font-size: 1.4rem;
+  color: orangered;
+}
+.exp div .slant{
+  display: flex;
+  justify-content: space-between;
+  color: orangered;
+}
+  .bubbles1, .bubbles2, .bubbles3{
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); /* Glass shadow */
+    position: absolute;
+    animation: bounce 5s infinite, glow 3s infinite alternate;
+  }
+.bubbles1{
+    background: rgba(75, 108, 183, 0.8);
+    min-height: 10rem;
+    width: 10rem;
+    animation-delay: 0s;
+    top: 30%;
+    left: 3%;
+  }
+  .bubbles2{
+    background: rgba(24, 40, 72, 0.8);
+    height: 15rem;
+    width: 15rem;
+    animation-delay: 2s;
+    top: 5%;
+    left: 60%;
+  }
+  .bubbles3{
+    background: rgba(31, 38, 135, 0.8);
+    height: 5rem;
+    width: 5rem;
+    animation-delay: 2.8s;
+    top: 95%;
+    left: 87%;
+  }
